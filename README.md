@@ -5,9 +5,19 @@ Construction of a simple HTTP server in Python.
 
 Please see the [instructions](https://csse6400.uqcloud.net/practicals/week01.pdf) for more details.
 
-Update this README file with appropriate information about your project,
-including how to run it.
+To run this server run the following:
+pipenv run flask --app todo run
+This requires the local pipenv to have flask installed
 
-There are [resources](https://www.makeareadme.com) available to help you write a good README file.
+To test the API endpoints the file endpoints.http can be run using REST Client in VSCode or alternatively using another HTTP client tester like PostMan
+
+The APIs created are the following:
+| Request Type | Endpoints | Action |
+| GET | api/health | to check that the server is running normally
+| GET | api/todos | get all the todos
+| GET | api/todos/<int:id> | to get a particular todo by id
+| POST | api/todos | to post a todo
+| PUT | api/todos/<int:id> | to update a particular todo by id
+| DELETE | api/todos/<int:id> | to delete a particular todo by id
 
 
