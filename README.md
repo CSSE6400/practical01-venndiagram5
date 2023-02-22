@@ -7,6 +7,7 @@ Please see the [instructions](https://csse6400.uqcloud.net/practicals/week01.pdf
 
 To run this server run the following:
 pipenv run flask --app todo run
+
 This requires the local pipenv to have flask installed
 
 To test the API endpoints the file endpoints.http can be run using REST Client in VSCode or alternatively using another HTTP client tester like PostMan
